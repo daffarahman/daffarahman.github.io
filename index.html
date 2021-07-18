@@ -1,237 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dap</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
-
-    <!-- My own CSS -->
-    <link rel="stylesheet" href="style.css" />
-
-    <title>Daffa Rahman</title>
-  </head>
-  <body>
-    <!-- <h1>Hello, world!</h1> -->
-
-    <!-- navbar -->
-    <nav
-      class="navbar navbar-expand-sm navbar-light sticky-top"
-      style="background-color: #fff"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="/">BEST.PY</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- end navbar -->
-
-    <!-- contained page -->
-    <div class="container">
-      <!-- welcome -->
-      <!-- <section class="welcome" id="welcome"> -->
-      <div class="container">
-        <div class="row">
-          <div class="text-center">
-            <h2 class="display-2">Daffa Rahman</h2>
-            <p class="lead">Programmer | Designer | Memer</p>
-          </div>
-        </div>
-      </div>
-      <!-- </section> -->
-      <!-- end welcome -->
-
-      <!-- about -->
-      <section class="about" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <h1 class="text-center">About</h1>
-              <p class="lead text-center">Who I am?</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="lead">
-                Hello, my name is Daffa, I'm 15 year old. I love programming,
-                programming is like my hobby, refreshing and calming. Not just
-                programming I can also do graphic design things like logo,
-                poster, and website.
-              </p>
-            </div>
-            <div class="col-sm-6">
-              <p class="lead">
-                I'm currently interested in Machine Learning and Problem Solving
-                Algorithm. And I love meaningless memes. I own a community
-                called iFoodsoft, where people can share their knowledge and
-                interest, and I also work at Flex and Vibe Studio.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end about -->
-
-      <!-- skills -->
-      <section class="skills" id="skills">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <h1 class="text-center">Skills</h1>
-              <p class="lead text-center">What can I do?</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-8 offset-sm-2">
-              <div class="card">
-                <div class="card-body">
-                  <div id="skill-data"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end skills -->
-
-      <!-- contact -->
-      <section class="contact" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <h1 class="text-center">Contact</h1>
-              <p class="lead text-center">Connect</p>
-              <!-- <hr /> -->
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 card-top-spacing">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <h4 class="text-center">Social Media</h4>
-                    <p class="lead text-center">Follow me online</p>
-                  </div>
-                  <div class="row">
-                    <div class="d-grid gap-2" id="social-links"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 card-top-spacing">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <h4 class="text-center">Say something</h4>
-                    <p class="lead text-center">
-                      Feel free to send me a message if you wanted to say
-                      something, I would love to read it, but don't spam me ok?,
-                      Good.
-                    </p>
-                  </div>
-                  <div class="row">
-                    <div class="d-grid gap-2" id="message-links">
-                      <a
-                        class="btn btn-dark shadow-sm"
-                        href="mailto: daffaonbusiness@gmail.com"
-                        role="button"
-                      >
-                        <!-- <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-envelope"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
-                          />
-                        </svg> -->
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          class="bi bi-envelope-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
-                          />
-                        </svg>
-                        email me
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end contact -->
+  <div class="centered">
+    <div>
+      <h1>Daffa Rahman</h1>
     </div>
-    <!-- end contained page -->
+    <div>
+      <p>Idk man I just want to go back to 2019</p>
+    </div>
 
-    <!-- footer -->
-    <footer class="footer">
-      <div class="container">
-        <span class="text-muted">Created by Daffa Rahman</span>
-      </div>
-    </footer>
-    <!-- end footer -->
 
-    <!-- My own Javascript -->
-    <!-- external -->
-    <script src="script.js"></script>
+    <div style="padding-top: 25px">
+      <h2>Socials</h2>
+      <a href="https://instagram.com/_daffa_rahman">Instagram</a>
+      <a href="https://twitter.com/ifoodsoft">Twitter</a>
+      <a href="https://github.com/daffarahman">Github</a>
+      <a href="https://daffarahman.itch.io">Itch.io</a>
+    </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <div style="padding-top: 25px">
+      <h2>Say something</h2>
+      <a href="mailto: daffaonbusiness@gmail.com">Send me an email</a>
+    </div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-      crossorigin="anonymous"
-    ></script>
+  </div>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    -->
-  </body>
+  <span style="color: rgb(86, 73, 65);">There is a secret in the page source</span>
+
+
+
+  <!-- letter for 51a -->
+  <script type="text" src="letter.txt"></script>
+
+</body>
 </html>
