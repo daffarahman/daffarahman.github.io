@@ -78,3 +78,10 @@ footer {
   width: 128px;
   border-radius: 16px;
 }
+
+.hero-img {
+  width: 100%;
+  max-width: 128pt;
+  height: auto;
+  margin: 0px;
+}
