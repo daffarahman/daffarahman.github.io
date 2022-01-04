@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+body {
+  font-size: 16px;
+  max-width: 720px;
+  margin: 0 auto;
+  font-family: "Merriweather", serif;
+  padding: 10px;
+  word-spacing: 2px;
+  text-align: justify;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: darkturquoise;
+}
