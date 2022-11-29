@@ -1,4 +1,4 @@
 import { createApp } from "vue";
-import MyComponent from "./components/my-component.js";
+import Navbar from "./components/navbar.js";
 
-createApp(MyComponent).mount("#app");
+createApp(Navbar).mount("#navbar");
