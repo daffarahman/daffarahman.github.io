@@ -15,10 +15,29 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a {
   margin: 0;
   padding: 0;
   margin-bottom: 1.75rem;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: #007acc;
+  box-shadow: 0 1px 0 0 currentColor;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.75rem;
 }
 
 .content-body {
