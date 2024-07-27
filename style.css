@@ -31,6 +31,20 @@ section p {
   font-family: "Courier New", Courier, monospace;
 }
 
+section .article-left {
+  display: inline-block;
+  width: 49%;
+  padding-right: 7px;
+  box-sizing: border-box;
+}
+
+section .article-right {
+  display: inline-block;
+  width: 49%;
+  padding-left: 7px;
+  box-sizing: border-box;
+}
+
 .main-content {
   max-width: 800px;
   background-color: burlywood;
