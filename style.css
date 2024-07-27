@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+  background-image: url("./img/coffee1.jpg");
+  font-family: sans-serif;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #3f1c00;
+}
+
+section p {
+  margin-bottom: 15px;
+  line-height: 1.3rem;
+  text-align: justify;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main-content {
+  max-width: 800px;
+  background-color: burlywood;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: 5px 8px 20px 2px #1f0e00;
+}
+
+.links {
+  margin-top: 10px;
+  text-align: center;
+}
+
+a,
+a:visited {
+  color: #582800;
+  text-decoration: none;
+}
+
+.icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+hr {
+  border: none;
+  background-color: #1f0e00;
+  height: 1px;
+}
+
+footer {
+  margin-top: 20px;
+}
