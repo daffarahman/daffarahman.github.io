@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+CL:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&family=VT323&family=Zain:wght@200;300;400;700;800;900&display=swap");
 
+*,
 .vt323font {
   font-family: "VT323", monospace;
   font-weight: 400;
@@ -19,10 +20,19 @@ a {
   margin: 0;
 }
 
+p {
+  font-size: 1.3rem;
+}
+
+body {
+  background-color: #ddd;
+}
+
 nav,
 .window-titlebar {
   border-bottom: 1px solid black;
   padding: 0 1.5rem;
+  background-color: white;
 }
 
 nav a {
@@ -30,7 +40,6 @@ nav a {
   font-weight: 400;
   font-style: normal;
   font-size: 1.5rem;
-
   color: black;
   text-decoration: none;
   display: inline-flex;
@@ -43,24 +52,29 @@ nav a:hover {
   background-color: black;
 }
 
+.desktop {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .window {
+  border: 1px solid black;
+  /* border-radius: 0.5rem; */
+  margin: 20px 15px;
+  box-shadow: 5px 5px black;
+}
+
 .window-titlebar p {
   text-align: center;
   font-family: "VT323", monospace;
-  font-weight: 200;
+  font-weight: 300;
   font-style: normal;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .window-content {
   box-sizing: border-box;
   padding: 10px 20px;
-}
-
-main .window {
-  resize: both;
-  overflow: auto;
-  width: 400px;
-  height: 200px;
-  border: 1px solid black;
-  border-radius: 0.5rem;
+  background-color: white;
 }
