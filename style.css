@@ -1,87 +1,66 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+CL:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&family=VT323&family=Zain:wght@200;300;400;700;800;900&display=swap");
 
-body {
-  background-image: url("./img/coffee1.jpg");
-  font-family: sans-serif;
-  margin: 0;
-  padding-left: 20px;
-  padding-right: 20px;
+.vt323font {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
+body,
 h1,
 h2,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-  text-align: center;
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  padding: 0;
+  margin: 0;
 }
 
-h1,
-h2 {
-  font-family: "DM Serif Display", serif;
+nav,
+.window-titlebar {
+  border-bottom: 1px solid black;
+  padding: 0 1.5rem;
+}
+
+nav a {
+  font-family: "VT323", monospace;
   font-weight: 400;
-  margin-bottom: 10px;
-  color: #3f1c00;
-}
+  font-style: normal;
+  font-size: 1.5rem;
 
-section p {
-  margin-bottom: 15px;
-  line-height: 1.3rem;
-  text-align: justify;
-  font-family: "Courier New", Courier, monospace;
-}
-
-section .article-left {
-  display: inline-block;
-  width: 49%;
-  padding-right: 7px;
-  box-sizing: border-box;
-}
-
-section .article-right {
-  display: inline-block;
-  width: 49%;
-  padding-left: 7px;
-  box-sizing: border-box;
-}
-
-.main-content {
-  max-width: 800px;
-  background-color: burlywood;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 1rem;
-  box-sizing: border-box;
-  padding: 20px;
-  box-shadow: 5px 8px 20px 2px #1f0e00;
-}
-
-.links {
-  margin-top: 10px;
-  text-align: center;
-}
-
-a,
-a:visited {
-  color: #582800;
+  color: black;
   text-decoration: none;
+  display: inline-flex;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
-.icon {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 15px;
+nav a:hover {
+  color: white;
+  background-color: black;
 }
 
-hr {
-  border: none;
-  background-color: #1f0e00;
-  height: 1px;
+.window-titlebar p {
+  text-align: center;
+  font-family: "VT323", monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.25rem;
 }
 
-footer {
-  margin-top: 20px;
+.window-content {
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+main .window {
+  resize: both;
+  overflow: auto;
+  width: 400px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 0.5rem;
 }
