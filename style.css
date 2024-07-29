@@ -109,3 +109,7 @@ main .window {
 .text-center {
   text-align: center;
 }
+
+.text-full {
+  text-align: justify;
+}
