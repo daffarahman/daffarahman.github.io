@@ -20,12 +20,25 @@ a {
   margin: 0;
 }
 
+a,
 p {
   font-size: 1.3rem;
 }
 
 body {
   background-color: #ddd;
+}
+
+a,
+a:visited {
+  color: #555;
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0;
+  padding-inline-start: 20px;
+  list-style-type: square;
 }
 
 nav,
@@ -35,7 +48,8 @@ nav,
   background-color: white;
 }
 
-nav a {
+nav a,
+nav a:visited {
   font-family: "VT323", monospace;
   font-weight: 400;
   font-style: normal;
@@ -50,6 +64,19 @@ nav a {
 nav a:hover {
   color: white;
   background-color: black;
+}
+
+nav .menus {
+  width: 80%;
+  display: inline-block;
+  /* background-color: yellow; */
+}
+
+nav .toolbar {
+  width: 18%;
+  display: inline-block;
+  text-align: right;
+  /* background-color: blue; */
 }
 
 .desktop {
@@ -77,4 +104,8 @@ main .window {
   box-sizing: border-box;
   padding: 10px 20px;
   background-color: white;
+}
+
+.text-center {
+  text-align: center;
 }
