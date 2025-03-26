@@ -3,87 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daffa Rahman</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="patterns.css" />
+    <title>Made By Dap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom background gradient for a modern look */
+      body {
+        background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+      }
+    </style>
+    <link rel="icon" type="image/svg+xml" href="icon.svg" />
   </head>
-  <body>
-    <nav>
-      <div class="menus">
-        <a href="#">@Dap</a>
-        <a href="#">File</a>
-        <a href="#">Edit</a>
-        <a href="#">Options</a>
-      </div>
-      <div class="toolbar">
-        <!-- <a href="#">Clock</a> -->
-      </div>
-    </nav>
-    <main class="desktop">
-      <!-- about window -->
-      <div class="window">
-        <div class="window-titlebar">
-          <p>About Me</p>
+  <body class="min-h-screen flex items-center justify-center p-4 font-sans">
+    <!-- Main container with a card-like appearance -->
+    <div class="bg-white rounded-2xl shadow-xl w-full max-w-4xl p-6 md:p-8">
+      <!-- Header Section: Profile Picture, Name, Description -->
+      <header class="flex flex-col md:flex-row items-center gap-6 mb-8">
+        <!-- Profile Picture -->
+        <div
+          class="w-32 h-32 bg-yellow-400 rounded-full flex items-center justify-center"
+        >
+          <!-- Placeholder for profile image -->
+          <span class="text-5xl">🧑🏾‍💻</span>
         </div>
-        <div class="window-content">
-          <h2>About Me</h2>
-          <p class="text-full">
-            Hello, world! My name is Muhammad Daffa Rahman. I'm an Undergraduate
-            Student at
-            <a href="https://uns.ac.id">Universitas Sebelas Maret</a>
-            majoring in Informatics (Computer Science). I'm currently interested
-            (and learning) Fullstack Web Development, Low Level Programming,
-            Artificial Intelligence & Machine Learning, and Game Development.
-          </p>
+        <!-- Name and Description -->
+        <div class="text-center md:text-left">
+          <h1 class="text-3xl font-bold text-gray-900">Hi, I'm Dap!</h1>
+          <p class="text-gray-600 mt-2">Solo web and game developer</p>
+          <!-- Social Links -->
+          <div class="flex gap-4 mt-4 justify-center md:justify-start">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="text-gray-600 hover:text-blue-500"
+            >
+              <span class="text-xl">🐦</span>
+            </a>
+            <a
+              href="https://linkedin.com/daffarahman"
+              target="_blank"
+              class="text-gray-600 hover:text-blue-700"
+            >
+              <span class="text-xl">💼</span>
+            </a>
+            <a
+              href="https://github.com/daffarahman"
+              target="_blank"
+              class="text-gray-600 hover:text-gray-900"
+            >
+              <span class="text-xl">🐙</span>
+            </a>
+            <a
+              href="mailto:madebydap@gmail.com"
+              class="text-gray-600 hover:text-red-500"
+            >
+              <span class="text-xl">📧</span>
+            </a>
+          </div>
         </div>
-      </div>
-      <!-- projects window -->
-      <div class="window">
-        <div class="window-titlebar">
-          <p>Projects</p>
-        </div>
-        <div class="window-content">
-          <h2>My Projects</h2>
-          <!-- <p>[under construction]</p> -->
-          <ul>
-            <li>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.daffarahman.offthetracks&pli=1"
-                >Off The Tracks - Fun Arcade Driving Android Game</a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/daffarahman/open-market"
-                >Open Market - Simple Cashier App made using wxWidgets C++</a
-              >
-            </li>
-            <li><p>And more in the future so stay tuned . . .</p></li>
-          </ul>
-        </div>
-      </div>
-      <!-- contact window -->
-      <div class="window">
-        <div class="window-titlebar">
-          <p>Contact Me</p>
-        </div>
-        <div class="window-content">
-          <h2>Let's Connect!</h2>
-          <ul>
-            <li><a href="https://github.com/daffarahman">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/daffarahman">LinkedIn</a></li>
-            <li><a href="https://x.com/dapmauugm">X (Twitter)</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- footer -->
-      <div class="window">
-        <div class="window-content text-center">
-          <p>
-            Made with &hearts; by
-            <a href="https://github.com/daffarahman">Dap</a>
-          </p>
-        </div>
-      </div>
-    </main>
+      </header>
+
+      <!-- Startups Section -->
+      <section>
+        <h2 class="text-2xl font-semibold text-gray-900 mb-6">My Projects</h2>
+        <!-- Grid for startup cards -->
+        <div
+          id="startups-container"
+          class="grid grid-cols-1 sm:grid-cols-2 gap-6"
+        ></div>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
