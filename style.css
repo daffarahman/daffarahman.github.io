@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    font-family: "Roboto Mono", monospace;
+}
+
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFCF71;
+    padding: 20px 12px 20px 40px;
+    border-radius: 48px;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #7B542F;
+}
+
+section {
+    padding: 28px 28px;
+    margin-top: 16px;
+    border-radius: 20px;
+}
+
+#nav-links {
+    display: flex;
+    gap: 48px;
+}
+
+#nav-links > a:hover {
+    color:#FF9D00;
+    transition-duration: 200ms;
+}
+
+#nav-button {
+    background-color: #7B542F;
+    color: #FFCF71;
+    padding: 10px 20px;
+    border-radius: 32px;
+}
+
+#nav-button:hover {
+    border: 2px solid #7B542F;
+    background-color: #FFCF71;
+    color: #7B542F;
+    transition-duration: 500ms;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffefcf;
+}
+
+#hero > img {
+    width: 200px;
+    border-radius: 100%;
+    border: 8px solid #FFCF71;
+}
+
+#hero > div > p, #hero > div > h2 {
+    max-width: 480px;
+    text-align: center;
+}
+
+#about {
+    background-color: #7B542F;
+    color: #ffefcf;
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+#about > p {
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+#projects {
+    background-color: #ffefcf;
+    color: #7B542F;
+}
+
+#projects > h1 {
+    text-align: right;
+}
+
+#projects > #project-list {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+#projects > #project-list > .project-item {
+    border: 2px solid #7B542F;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#projects > #project-list > .project-item > a, 
+#projects > #project-list > .project-item > a:visited  {
+    border: 2px solid #7B542F;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+#projects > #project-list > .project-item > a:hover  {
+    border: 2px solid #7B542F;
+    background-color: #7B542F;
+    color: #ffefcf;
+    transition-duration: 200ms;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+footer {
+    padding: 14px 28px;
+    margin-top: 16px;
+    border-radius: 20px;
+
+    background-color: #1a7984;
+    color: white;
+
+    text-align: center;
+}
+
+footer a, footer a:visited {
+    color: #FF9D00;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    #projects > #project-list {
+        grid-template-columns: auto auto;
+    }
+}
+
+/* PC */
+@media screen and (min-width: 1024px) {
+    #hero {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    #hero > div > p, #hero > div > h2 {
+        max-width: 480px;
+        text-align: justify;
+    }   
+
+    #projects > #project-list {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/* yang khusus ini ga mobile-first, tapi desktop-first */
+@media screen and (max-width: 600px) {
+    #nav-links {
+        display: none;
+    }
+}
